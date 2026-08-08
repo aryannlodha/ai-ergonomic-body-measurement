@@ -1,16 +1,12 @@
 # 🧍 AI-Based Ergonomic Body Measurement
 
-> Turn a normal laptop webcam into a contactless human body measurement tool.
+> A computer vision system that uses a laptop webcam to measure human body dimensions in real time.
 
 ## 🚀 Overview
 
-Traditional body measurements using measuring tapes and stadiometers are slow, manual, and prone to human error.
+The system uses **Python, OpenCV and MediaPipe Pose** to detect human body landmarks and convert pixel measurements into real-world dimensions using a **160 cm reference calibration**.
 
-This project uses **Computer Vision + AI Pose Estimation** to detect body landmarks through a webcam and estimate real-world body dimensions in centimeters.
-
-The system uses a **160 cm reference calibration** to convert pixel distances into real-world measurements.
-
-## ✨ What It Measures
+## ✨ Measurements
 
 - 📏 Body Height
 - ↔️ Shoulder Width
@@ -21,56 +17,25 @@ The system uses a **160 cm reference calibration** to convert pixel distances in
 
 ## ⚙️ How It Works
 
-```text
-Webcam
-   ↓
-Pose Detection
-   ↓
-MediaPipe Pose
-   ↓
-33 Body Landmarks
-   ↓
-Pixel → cm Calibration
-   ↓
-Real-Time Measurements
-🛠️ Tech Stack
+Webcam → MediaPipe Pose → 33 Body Landmarks → Pixel-to-cm Calibration → Real-Time Measurements
 
-Python · OpenCV · MediaPipe Pose · Computer Vision
+## 🛠️ Tech Stack
 
-🌍 Applications
-🛒 E-Commerce
+**Python · OpenCV · MediaPipe Pose · Computer Vision**
 
-Incorrect clothing sizes can lead to customer dissatisfaction and size-related returns. Camera-based body measurements could help platforms such as Amazon and Myntra improve size recommendations.
+## 🎯 Future Scope
 
-🏭 Industrial Ergonomics
+- 📱 Mobile application
+- 🛍️ E-commerce size recommendations
+- 🧍 3D body measurement
+- 🦺 RULA/REBA-based ergonomic assessment
+- 📊 Automated measurement reports
+- 🎥 Dynamic posture analysis
 
-Measure anthropometric dimensions for workstation, tool and equipment design.
+## ▶️ Run
 
-🏥 Healthcare
-
-Potential use in remote anthropometric assessment and clinical measurements.
-
-👕 Tailoring & Apparel
-
-Generate body measurements without conventional measuring tapes.
-
-🎯 Future Scope
-📱 Mobile application
-🛍️ E-commerce size recommendations
-🧍 3D body measurement
-🦺 RULA/REBA-based ergonomic assessment
-📊 Automated measurement reports
-🎥 Dynamic posture analysis
-📂 Project Structure
-src/
-├── pose.py
-└── launcher.py
-
-media/
-demo/
-docs/
-▶️ Run the Project
+```bash
 pip install -r requirements.txt
 python src/launcher.py
-
+```
 A webcam and suitable calibration setup are required.

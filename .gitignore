@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets / local configuration
+.env
+*.env
+
+# Build / generated files
+build/
+dist/
+*.egg-info/
+
+# Large local outputs
+outputs/
+tmp/

@@ -1,0 +1,6 @@
+# Provisional dependencies for the Python implementation
+# Verify against the final source code before publishing.
+
+mediapipe
+opencv-python
+numpy
